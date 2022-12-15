@@ -1,3 +1,8 @@
 body{
+    width: 1440px;
     background-color:#C5E4E7 ;
+}
+
+.logo img{
+    position: relative;
 }
