@@ -15,14 +15,16 @@ body{
     justify-content: center;
     align-items: center;
     text-align: top;
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 4rem;
 }
 
 .tip-calculator{
     display: flex;
-    margin-left: 25rem;
-    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem;
+    margin-top: 4rem;
     flex-direction: column;
     padding: 2rem;
     border-radius: 25px;
@@ -56,9 +58,9 @@ input{
     margin-bottom: 50px;
 }
 
-.tips, .second-tip{
-    display: flex;
-    /* display: grid;  */
+.tips{
+    display: grid; 
+    grid-template-columns: 117px 117px 117px;
     margin-top: 1rem;
     row-gap: 2rem;
     column-gap: 3rem;
