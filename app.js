@@ -1,7 +1,7 @@
 const billType = document.querySelector(".bill-type");
 const peopleInput = document.querySelector(".people-input");
 const tipsPerPerson = document.getElementById("tip-amount");
-const totalPerPerson = document.getElementById("tip-amount");
+const totalPerPerson = document.getElementById("tip-amount1");
 const tips = document.querySelectorAll(".tips");
 const tipCustom = document.querySelector(".tip-custom");
 const resetBtn = document.querySelector(".reset");
@@ -17,8 +17,8 @@ resetBtn.addEventListener("click", resetBtn);
 
 billType.value = "0.0";
 peopleInput.value = "1";
-tipsPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
+tipsPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 
 let billValue = 0.0;
 let peopleValue = 1;
