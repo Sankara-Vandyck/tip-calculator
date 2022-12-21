@@ -14,7 +14,7 @@ body{
 
 .logo{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .tip-calculator{
@@ -24,7 +24,7 @@ body{
     display: flex;
     flex-direction: row;
     padding: 2.3rem;
-    margin: 10rem;
+    margin: 5rem;
     border-radius: 1.5rem 1.5rem ;
 }
 
@@ -42,7 +42,8 @@ label{
 }
 
 input{
-    border: none !important;
+    border-color:transparent;
+    box-sizing: border-box;
     outline: none !important;
     padding: 5px;
     padding-right: 18px;
@@ -54,6 +55,7 @@ input{
     color: hsl(183, 100%, 15%);
     font-weight: bold;
     font-family: "Space mono", monospace !important;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -64,6 +66,10 @@ input{
 
 #bill-input{
     margin-bottom: 3.4rem;
+}
+
+input:hover{
+    border-color: #26C2AE;
 }
 
 .tips{
@@ -160,7 +166,8 @@ input{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 6.7rem;
+    font-size: 20px;
+    width: 7.2rem;
     height: 3rem !important;;
 }
 

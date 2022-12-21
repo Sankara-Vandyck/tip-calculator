@@ -16,6 +16,7 @@ tips.forEach(function(val) {
 tipCustom.addEventListener("input", tipCustomFun);
 resetBtn.addEventListener("click", reset);
 
+
 billType.value = "0";
 peopleInput.value = "0";
 
@@ -34,7 +35,7 @@ function billTypeFun(){
 function peopleInputFun(){
     peoplevalue = parseFloat(peopleInput.value);
 
-    if (peoplevalue < 1) {
+    if (peoplevalue < 0) {
         error.style.display = '';
         peopleInput.style.border = "thick solid red";
     }else{
@@ -79,7 +80,7 @@ function calculateTip(){
 function reset(){
     billType.value = "0";
     billTypeFun();
-    peopleInput.value = "1";
+    peopleInput.value = "0";
     peopleInputFun();
     tipCustom.value = "";
 }
