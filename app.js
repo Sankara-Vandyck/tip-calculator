@@ -19,7 +19,7 @@ tipCustom.addEventListener("input", tipCustomFun);
 resetBtn.addEventListener("click", reset);
 
 
-billType.value = "0";
+billType.value = "50";
 peopleInput.value = "0";
 
 tipPrePerson.innerHTML = "$" + (0.0).toFixed(2);
