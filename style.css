@@ -141,8 +141,13 @@ input{
     background-color: hsl(172, 67%, 45%)  !important;
     padding: 13px 0 13px 0 !important;
     border-radius: 5px !important;
-    cursor: pointer;
+   
 }
+
+/* .reset:hover{
+    cursor: pointer;
+    background: #9FE8DF;
+} */
 
 #tip-custom input{
     align-items: center;
