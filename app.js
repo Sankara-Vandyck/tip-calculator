@@ -5,7 +5,9 @@ const totalPerPerson = document.getElementById("total-amount");
 const tips = document.querySelectorAll(".tip-container");
 const tipCustom = document.querySelector(".tip-custom")
 const resetBtn = document.querySelector(".reset");
-const error = document.querySelector(".error-message");
+
+const error_message =  document.querySelector(".error-message");
+
 
 billType.addEventListener("input", billTypeFun);
 peopleInput.addEventListener("input", peopleInputFun);
@@ -29,17 +31,32 @@ let tipvalue = 0.15;
 
 function billTypeFun(){
     billvalue = parseFloat(billType.value);
+ 
    calculateTip();
+   peoplevalue = parseFloat(peopleInput.value);
+
+   if(peoplevalue === 0 ){
+    error_message.textContent = "Can't be zero"
+
+    peopleInput.style.border = "thick solid red";
+
+   }else{
+    error_message.textContent = ""
+
+   }
 }
 
 function peopleInputFun(){
     peoplevalue = parseFloat(peopleInput.value);
 
-    if (peoplevalue < 0) {
-        error.style.display = '';
+     if (peoplevalue ==0) {
+  
+        error_message.textContent = "Can't be zero"
         peopleInput.style.border = "thick solid red";
+    
     }else{
-        error.style.display = "none";
+    
+        error_message.textContent = ""
         peopleInput.style.border ="none";
         calculateTip();
     }
@@ -83,5 +100,7 @@ function reset(){
     peopleInput.value = "0";
     peopleInputFun();
     tipCustom.value = "";
+    error_message.textContent = "";
+    peopleInput.style.border ="none";
 }
 

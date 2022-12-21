@@ -171,13 +171,15 @@ input:hover{
     height: 3rem !important;;
 }
 
-.peole-page{
+.people-page{
     display: flex;
     justify-content: space-between;
+
 }
 
 .error-message{
     color: red !important;
+
 }
 
 

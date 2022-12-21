@@ -7,8 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-  <!-- <style> @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap'); </style> -->
   <link rel="stylesheet" href="style.css">
+  
+ 
  
  
   <title>Frontend Mentor | Tip calculator app</title>
@@ -17,10 +18,10 @@
     <div class="logo">
           <img src="./images/logo.svg" alt="logo">
     </div>
-    <div class="tip-calculator">
+    <div class="tip-calculator dashboard">
       <div class="first-part" >
           <label for="">Bill</label>
-          <input type="number" class="bill-type" id="bill-input" >
+          <input type="number" class="bill-type" id="bill-input" min ="0">
           <label for="">Select Tip %</label>
           <div class="tips">
             <div class="tip-container">5%</div>
@@ -32,9 +33,12 @@
           </div>
             <div class="people-page">
               <label for="">Number of People</label>
-              <label for="" class="error-message">Can't be zero</label>
+             
+
+              <label for="" class="error-message"></label>
+
             </div> 
-            <input type="number" class="people-input">
+            <input type="number" class="people-input" min ="0">
           </div>
           
             <div class="result">
