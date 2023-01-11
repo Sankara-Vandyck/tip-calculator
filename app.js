@@ -25,8 +25,7 @@ tipPrePerson.innerHTML = "$" + (0.0).toFixed(2);
 totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 
 let billvalue = 0;
-let peoplevalue = 1;
-// let tipvalue = 0;
+let peoplevalue = 0;
 
 function billTypeFun(){
     billvalue = parseFloat(billType.value);
@@ -85,8 +84,8 @@ function handleClick(event){
 
 function calculateTip(){
     if(peoplevalue >=1){
-        let tipAmount = (billvalue * tipvalue) / peoplevalue;
-        let total = (billvalue + tipAmount) / peoplevalue;
+        let tipAmount = (billvalue * tipvalue);
+        let total = (billvalue / peoplevalue + tipAmount);
         tipPrePerson.innerHTML = "$" + tipAmount.toFixed(2);
         totalPerPerson.innerHTML = "$" + total.toFixed(2);
     }
