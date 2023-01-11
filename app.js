@@ -5,7 +5,6 @@ const totalPerPerson = document.getElementById("total-amount");
 const tips = document.querySelectorAll(".tip-container");
 const tipCustom = document.querySelector(".tip-custom")
 const resetBtn = document.querySelector(".reset");
-
 const error_message =  document.querySelector(".error-message");
 
 
@@ -19,7 +18,7 @@ tipCustom.addEventListener("input", tipCustomFun);
 resetBtn.addEventListener("click", reset);
 
 
-billType.value = "50";
+billType.value = "0";
 peopleInput.value = "0";
 
 tipPrePerson.innerHTML = "$" + (0.0).toFixed(2);
@@ -99,7 +98,8 @@ function reset(){
     billTypeFun();
     peopleInput.value = "0";
     peopleInputFun();
-    tipCustom.value = "";
+    tips.active = "";
+    tipCustom.value = "none";
     error_message.textContent = "";
     peopleInput.style.border ="none";
 }
