@@ -10,6 +10,7 @@ body{
     background-color:#C5E4E7 ;
     font-family: 'Space Mono', monospace;
     font-weight: 700;
+    margin: 3rem auto;
 }
 
 .logo{
@@ -142,12 +143,12 @@ input:hover{
 
 .reset{
     display: flex;
-    margin-top: 9.5rem;
+    margin-top: 7rem;
     justify-content: center;
     align-items: center !important;
     font-size: 24px !important;
     font-weight: 700;
-    color: hsl(183, 100%, 15%);
+    color: #00474B;
     background-color: #0D686D;
     padding: 13px 0 13px 0 !important;
     border-radius: 5px !important;
@@ -164,8 +165,13 @@ input:hover{
     justify-content: center;
     box-sizing: border-box;
     font-size: 20px;
-    width: 7.2rem;
+    width: 7.4rem;
     height: 3rem !important;;
+}
+
+#tip-custom ::placeholder{
+    color: #547878;
+    
 }
 
 .people-page{
@@ -179,7 +185,22 @@ input:hover{
 
 }
 
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        height: 100%;
+        overflow-x: hidden;
+    }
 
+    .logo{
+        margin-left: 10px;
+    }
+
+}
 
 
 
