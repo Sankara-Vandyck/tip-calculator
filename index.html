@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Tip calculator app</title>
-</head>
-<body>
+   <title>Frontend Mentor | Tip calculator app</title>
+ </head>
+ <body>
     <div class="logo">
-          <img src="./images/logo.svg" alt="logo">
+     <img src="./images/logo.svg" alt="logo">
+   </div>
+   <div class="tip-calculator">
+     <div class="first-part" >
+       <label for="">Bill</label>
+       <input type="number" class="bill-type" id="bill-input" min ="0">
+       <label for="">Select Tip %</label>
+       <div class="tips">
+         <div class="tip-container">5%</div>
+         <div class="tip-container">10%</div>
+         <div class="tip-container active-tip">15%</div>
+         <div class="tip-container">25%</div>
+         <div class="tip-container">50%</div>
+         <div id="tip-custom"> <input type="number"  class="tip-custom" placeholder="Custom"></div>
+        </div>
+        <div class="people-page">
+          <label for="">Number of People</label>
+          <label for="" class="error-message"></label>
+        </div> 
+        <input type="number" class="people-input" min ="0">
+      </div>
+      <div class="result">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip-amount">$4.27</div>
+        </div>
+        <div class="tip-amount">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="total-amount">$32.79</div>
+        </div>
+        <div class="reset">RESET</div>
+      </div>
     </div>
-    <div class="tip-calculator">
-      <div class="first-part" >
-          <label for="">Bill</label>
-          <input type="number" class="bill-type" id="bill-input" min ="0">
-          <label for="">Select Tip %</label>
-          <div class="tips">
-            <div class="tip-container">5%</div>
-            <div class="tip-container">10%</div>
-            <div class="tip-container active-tip">15%</div>
-            <div class="tip-container">25%</div>
-            <div class="tip-container">50%</div>
-            <div id="tip-custom"> <input type="number"  class="tip-custom" placeholder="Custom"></div>
-          </div>
-            <div class="people-page">
-              <label for="">Number of People</label>
-             
-
-              <label for="" class="error-message"></label>
-
-            </div> 
-            <input type="number" class="people-input" min ="0">
-          </div>
-          
-            <div class="result">
-              <div class="tip-amount">
-                <div class="text">
-                  <p>Tip Amount</p>
-                  <p class="person">/ person</p>
-                </div>
-                <div class="amount" id="tip-amount">$4.27</div>
-              </div>
-                <div class="tip-amount">
-                  <div class="text">
-                    <p>Total</p>
-                    <p class="person">/ person</p>
-                  </div>
-                  <div class="amount" id="total-amount">$32.79</div>
-                </div>
-              <div class="reset">RESET</div>
-          </div>
-    </div>
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+ </body>
 </html>
