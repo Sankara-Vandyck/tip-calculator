@@ -28,8 +28,8 @@ tip-calculator-rho-coral.vercel.app
 3. Using JavaScript to know the live preview of the project
 
 ### Screenshot
-![Desktop](./screenshot.png)
-![Mobile](./screenshot.png)
+![Desktop](./Desktop.png)
+![Mobile](./Mobile.png)
 ### Developer 
 - [@nicholas-vandyck](https://github.com/nicholas-vandyck) | Frontend Developer
 - [@5yeus](https://github.com/5yeus) | Frontend Developer
