@@ -181,7 +181,6 @@ input:hover{
 .people-page{
     display: flex;
     justify-content: space-between;
-
 }
 
 .error-message{
