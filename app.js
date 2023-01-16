@@ -85,7 +85,7 @@ function handleClick(event){
 function calculateTip(){
     if(peoplevalue >=1){
         let tipAmount = (billvalue * tipvalue) / peoplevalue;
-        let total = (billvalue + tipAmount) / peoplevalue;
+        let total = (billvalue + (peoplevalue*tipAmount)) / peoplevalue;
         tipPrePerson.innerHTML = "$" + tipAmount.toFixed(2);
         totalPerPerson.innerHTML = "$" + total.toFixed(2);
     }

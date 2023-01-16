@@ -49,7 +49,7 @@ input{
     box-sizing: border-box;
     outline: none !important;
     padding: 5px;
-    padding-right: 18xpx;
+    padding-right: 18px;
     background-position: 14px 15px !important;
     background-repeat: no-repeat !important;
     background-color: hsl(189, 41%, 97%);
@@ -145,7 +145,7 @@ input:hover{
 
 .reset{
     display: flex;
-    margin-top: 6.5rem;
+    margin-top: 7rem;
     justify-content: center;
     align-items: center !important;
     font-size: 24px !important;
