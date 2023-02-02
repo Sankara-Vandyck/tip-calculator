@@ -18,7 +18,7 @@
    <div class="tip-calculator">
      <div class="first-part" >
        <label for="">Bill</label>
-       <input type="number" class="bill-type" id="bill-input" min ="0">
+       <input type="number" class="bill-type" id="bill-input" min ="0" oninput="this.value = Math.abs(this.value)">
        <label for="">Select Tip %</label>
        <div class="tips">
          <div class="tip-container">5%</div>
@@ -26,13 +26,13 @@
          <div class="tip-container active-tip">15%</div>
          <div class="tip-container">25%</div>
          <div class="tip-container">50%</div>
-         <div id="tip-custom"> <input type="number"  class="tip-custom" placeholder="Custom" min="0"></div>
+         <div id="tip-custom"> <input type="number"  class="tip-custom" placeholder="Custom" min="0" oninput="this.value = Math.abs(this.value)"></div>
         </div>
         <div class="people-page">
           <label for="">Number of People</label>
           <label for="" class="error-message"></label>
         </div> 
-        <input type="number" class="people-input" min ="0">
+        <input type="number" class="people-input" min ="0" oninput="this.value = Math.abs(this.value)">
       </div>
       <div class="result">
         <div class="tip-amount">
