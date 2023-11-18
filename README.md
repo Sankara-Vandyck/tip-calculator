@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### tip-calculator
 ![Amalitech](./amalitech.jpeg)
 
@@ -33,3 +34,6 @@ tip-calculator-rho-coral.vercel.app
 ### Developer 
 - [@nicholas-vandyck](https://github.com/nicholas-vandyck) | Frontend Developer
 - [@5yeus](https://github.com/5yeus) | Frontend Developer
+=======
+# tip-calculator
+>>>>>>> 3120bcb76da8276b088f2d9ca365a1f2d658c6ed
